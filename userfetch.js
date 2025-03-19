@@ -5,10 +5,10 @@ import { graphql } from "@octokit/graphql";
 
 const token = process.env.GITHUB_TOKEN;
 const username = "4fort"; // Replace with your GitHub username
-// const octokit = new Octokit({
-//   auth: process.env.PAT, // Ensure your PAT includes `repo` scope
-//   request: { fetch },
-// });
+const octokit = new Octokit({
+  auth: process.env.PAT, // Ensure your PAT includes `repo` scope
+  request: { fetch },
+});
 
 const graphqlWithAuth = graphql.defaults({
   headers: {
@@ -83,7 +83,7 @@ async function fetchRepoCount() {
       }
     `;
 
-  const response = await graphqlWithAuth(query);
+  const response = await octokit.graphql(query);
   return response.viewer.repositories.totalCount;
 }
 
