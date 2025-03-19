@@ -1,0 +1,15 @@
+{
+  "name": "4fort",
+  "version": "1.0.0",
+  "description": "4fort Github README.md",
+  "main": "userfetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/graphql": "^8.2.1"
+  }
+}
