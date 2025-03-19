@@ -18,18 +18,18 @@
 . Location: Philippines
 . Hobbies: Cooking, Gaming
 
-@ Technology  ----------------------------------------------
+@ Technology ----------------------------------------------
 . Frameworks: NextJS, Django
 . Languages: Python, TypeScript, CSS, JavaScript, 
-           HTML, C, SCSS, PHP, C++, Java
+              HTML, C, SCSS, PHP, C++, Java
 . Learning: CSharp, Springboot, ThreeJS, Shaders
 
-@ GitHub Stats  --------------------------------------------
+@ GitHub Stats --------------------------------------------
 . Age: 5 years
 . Repos: 32
-. Commits: 945
+. Commits: 947
 . Stars: 1
-. Lines of Code: 48,239 ( +86,092, -37,853 )
+. Lines of Code: 11,713 ( +42,085, -30,372 )
 ```
 
 ###
