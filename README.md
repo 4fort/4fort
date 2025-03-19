@@ -7,20 +7,25 @@
 <img align="left" src="https://i.redd.it/h7dae4o0uk461.jpg" alt="Bakaguya made by レヴィノス (https://www.pixiv.net/en/artworks/80962527)" width="320" />
 
 ```csharp
-4fort@github
-------------
-OS: Fedora Linux WS
-Shell: zsh 5.9
-Pronouns: He/Him
-Location: Philippines
-Frameworks: NextJS, Django
-Languages: Python, TypeScript, CSS, JavaScript, 
+. 4fort@github --------------------------------------
+. OS: Fedora Linux WS
+. Shell: zsh 5.9
+. Pronouns: He/Him
+. Location: Philippines
+. Hobbies: Cooking, Gaming
+
+. Technology  ---------------------------------------
+. Frameworks: NextJS, Django
+. Languages: Python, TypeScript, CSS, JavaScript, 
            HTML, C, SCSS, PHP, C++, Java
-Learning: C#, Springboot, ThreeJS, Shaders
-Hobbies: Cooking, Gaming
-Commits: 941
-Stars: 1
-Discord: _4fort
+. Learning: C#, Springboot, ThreeJS, Shaders
+
+. GitHub Stats  -------------------------------------
+. Age: 5 years
+. Repos: 32
+. Commits: 943
+. Stars: 1
+. Lines of Code: 64,626 ( +75,720 -11,094 )
 ```
 
 ###
