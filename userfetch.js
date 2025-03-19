@@ -1,5 +1,5 @@
-const fs = require("fs");
-const { graphql } = require("@octokit/graphql");
+import fs from "fs/promises";
+import { graphql } from "@octokit/graphql";
 
 const token = process.env.GITHUB_TOKEN;
 const username = "4fort"; // Replace with your GitHub username
@@ -53,7 +53,7 @@ async function updateReadme() {
     fetchCommitCount(),
   ]);
 
-  let readmeContent = fs.readFileSync("README.md", "utf8");
+  let readmeContent = await fs.readFile("README.md", "utf8");
   readmeContent = readmeContent.replace(
     /<!--STARS--> \d+/,
     `<!--STARS--> ${stars}`
@@ -63,7 +63,7 @@ async function updateReadme() {
     `<!--COMMITS--> ${commits}`
   );
 
-  fs.writeFileSync("README.md", readmeContent);
+  await fs.writeFile("README.md", readmeContent);
 }
 
 updateReadme().catch((error) => {
