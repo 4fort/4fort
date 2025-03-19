@@ -12,6 +12,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Delay to Avoid API Overload
+        run: sleep 30
+
       - name: Fetch GitHub Stats
         uses: teoxoy/profile-readme-stats@v2
         with:
