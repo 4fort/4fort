@@ -1,14 +1,11 @@
+"use strict";
+
 import fs from "fs/promises";
 import fetch from "node-fetch";
-import { Octokit } from "@octokit/core";
 import { graphql } from "@octokit/graphql";
 
 const token = process.env.GITHUB_TOKEN;
 const username = "4fort"; // Replace with your GitHub username
-const octokit = new Octokit({
-  auth: process.env.PAT, // Ensure your PAT includes `repo` scope
-  request: { fetch },
-});
 
 const graphqlWithAuth = graphql.defaults({
   headers: {
@@ -74,17 +71,16 @@ async function fetchAccountAge() {
 // Fetch Repositories Count
 async function fetchRepoCount() {
   const query = `
-      query {
-        viewer {
-          repositories(ownerAffiliations: OWNER, isFork: false) {
+      {
+        user(login: "${username}") {
+          repositories {
             totalCount
           }
         }
       }
     `;
-
-  const response = await octokit.graphql(query);
-  return response.viewer.repositories.totalCount;
+  const response = await graphqlWithAuth(query);
+  return response.user.repositories.totalCount;
 }
 
 // Fetch Code Stats (Lines Added/Removed)
