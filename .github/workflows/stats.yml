@@ -22,6 +22,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           includeForks: false # Set to true if you want to include forked repositories
+          readme: './README.md'
 
       - name: Commit and Push Changes
         run: |
