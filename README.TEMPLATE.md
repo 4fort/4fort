@@ -8,7 +8,7 @@
 
 ```csharp
 4fort@github
--------------------------
+------------
 OS: Fedora Linux WS
 Shell: zsh 5.9
 Pronouns: He/Him
