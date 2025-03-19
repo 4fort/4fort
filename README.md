@@ -19,8 +19,8 @@ Languages: JavaScript, TypeScript,
            C++, MySQL, PostgreSQL
 Learning: C#, Springboot, ThreeJS, Shaders
 Hobbies: Cooking, Gaming
-Commits: {{ COMMITS }}
-Stars: {{ STARS }}
+Commits: 933
+Stars: 1
 Discord: _4fort
 ```
 
