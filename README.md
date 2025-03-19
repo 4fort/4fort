@@ -1,25 +1,41 @@
-<h2 align="left">Hi 👋! My name is Dexter Fort Silva and I love web developing ❤️👨‍💻.</h2>
+![Header](./header.png)
+
+```zsh
+> userfetch
+```
+
+<img align="left" src="https://i.redd.it/h7dae4o0uk461.jpg" alt="Bakaguya made by レヴィノス (https://www.pixiv.net/en/artworks/80962527)" width="320" /> 
+
+```csharp
+4fort@github
+-------------------------
+OS: Fedora Linux WS
+Shell: zsh 5.9
+Pronouns: He/Him
+Location: Philippines
+Frameworks: NextJS, Django
+Languages: JavaScript, TypeScript,
+           Go, Python, PHP, Java,
+           C++, MySQL, PostgreSQL
+Learning: C#, Springboot, ThreeJS, Shaders
+Hobbies: Cooking, Gaming
+Commits: <!--COMMITS--> 0
+Stars: <!--STARS--> 0
+Discord: _4fort
+```
 
 ###
 
+<h2>Stats 🔥</h3>
+
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=4fort&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=true" height="150" alt="stats graph"  />
-  <img src="https://streak-stats.demolab.com?user=4fort&locale=en&mode=daily&theme=github_dark&hide_border=false&border_radius=5" height="150" alt="streak graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=4fort&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=github_dark&hide_border=true" height="150" alt="languages graph"  />
 </div>
 
 ###
 
-<div align="left">
-  <a href="https://www.instagram.com/_4fort/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
-  </a>
-  <a href="https://ph.linkedin.com/in/dexter-fort-silva" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
-  </a>
-</div>
-
-###
+<h2>Tech Stack 👨‍💻</h2>
 
 <div align="left">
   <img src="https://skillicons.dev/icons?i=nextjs" height="30" alt="nextjs logo"  />
@@ -61,11 +77,7 @@
 
 ###
 
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/4fort/4fort/output/snake.svg" alt="Snake animation" />
-
-###
+<h2>...And yes, I love listening to music 🎧</h2>
 
 <div align="center">
   <a href="https://open.spotify.com/user/225vnemkl3rnfbf2ezg4jflpy">
