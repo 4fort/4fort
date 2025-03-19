@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import fetch from "node-fetch";
 import { graphql } from "@octokit/graphql";
 
 const token = process.env.GITHUB_TOKEN;
@@ -7,6 +8,9 @@ const username = "4fort"; // Replace with your GitHub username
 const graphqlWithAuth = graphql.defaults({
   headers: {
     authorization: `token ${token}`,
+  },
+  request: {
+    fetch,
   },
 });
 
