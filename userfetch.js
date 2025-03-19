@@ -57,14 +57,17 @@ async function updateReadme() {
     fetchCommitCount(),
   ]);
 
-  let readmeContent = await fs.readFile("README.md", "utf8");
-  readmeContent = readmeContent.replace(
-    /<!--STARS--> \d+/,
-    `<!--STARS--> ${stars}`
-  );
-  readmeContent = readmeContent.replace(
-    /<!--COMMITS--> \d+/,
-    `<!--COMMITS--> ${commits}`
+  let templateContent = await fs.readFile("README.TEMPLATE.md", "utf8");
+
+  // Replace placeholders with actual values
+  const placeholders = {
+    "{{ STARS }}": stars,
+    "{{ COMMITS }}": commits,
+  };
+
+  let readmeContent = templateContent.replace(
+    /{{\s*[\w]+\s*}}/g,
+    (match) => placeholders[match] || match
   );
 
   await fs.writeFile("README.md", readmeContent);
