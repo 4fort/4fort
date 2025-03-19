@@ -88,7 +88,7 @@ async function fetchCodeStats() {
   const repos = await graphqlWithAuth(`
       {
         user(login: "${username}") {
-          repositories(first: 100, isFork: false) {
+          repositories(first: 100, isFork: false, privacy: PUBLIC) {
             nodes { name }
           }
         }
@@ -98,14 +98,11 @@ async function fetchCodeStats() {
   let totalAdded = 0;
   let totalRemoved = 0;
 
-  // Loop through each repo to gather code stats
   for (const repo of repos.user.repositories.nodes) {
     const response = await fetch(
       `https://api.github.com/repos/${username}/${repo.name}/stats/code_frequency`,
       {
-        headers: {
-          Authorization: `token ${token}`,
-        },
+        headers: { Authorization: `token ${token}` },
       }
     );
 
@@ -114,7 +111,7 @@ async function fetchCodeStats() {
     if (Array.isArray(data)) {
       data.forEach(([_, additions, deletions]) => {
         totalAdded += additions;
-        totalRemoved += Math.abs(deletions); // Deletions are negative values
+        totalRemoved += Math.abs(deletions); // Ensure deletions are positive
       });
     }
   }
