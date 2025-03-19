@@ -1,0 +1,34 @@
+name: Update GitHub Stats in README
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs every midnight
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Fetch GitHub Stats
+        uses: teoxoy/profile-readme-stats@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update README
+        run: |
+          sed -i '/^Commits:/s/[0-9]\+/${{ env.COMMITS }}/' README.md
+          sed -i '/^Stars:/s/[0-9]\+/${{ env.STARS }}/' README.md
+        env:
+          COMMITS: ${{ steps.stats.outputs.commits }}
+          STARS: ${{ steps.stats.outputs.stars }}
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m "chore: auto-update stats"
+          git push
