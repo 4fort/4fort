@@ -103,7 +103,7 @@ async function updateReadme() {
     fetchTopLanguages(),
   ]);
 
-  let templateContent = await fs.readFile("README.template.md", "utf8");
+  let templateContent = await fs.readFile("README.TEMPLATE.md", "utf8");
 
   // Replace placeholders with actual values
   let readmeContent = templateContent
