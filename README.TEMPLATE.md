@@ -14,7 +14,7 @@ Shell: zsh 5.9
 Pronouns: He/Him
 Location: Philippines
 Frameworks: NextJS, Django
-Languages: {{LANGUAGES}}
+Languages: {{ LANGUAGES }}
 Learning: C#, Springboot, ThreeJS, Shaders
 Hobbies: Cooking, Gaming
 Commits: {{ COMMITS }}
