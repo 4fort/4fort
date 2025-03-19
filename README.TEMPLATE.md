@@ -1,30 +1,34 @@
 ![Header](./header.png)
 
+```ruby
+● ● ●                                                Terminal
+```
+
 ```zsh
 > userfetch
 ```
 
 <img align="left" src="https://i.redd.it/h7dae4o0uk461.jpg" alt="Bakaguya made by レヴィノス (https://www.pixiv.net/en/artworks/80962527)" width="320" />
 
-```csharp
-. 4fort@github --------------------------------------
+```makefile
+@ 4fort@github ---------------------------------------------
 . OS: Fedora Linux WS
 . Shell: zsh 5.9
 . Pronouns: He/Him
 . Location: Philippines
 . Hobbies: Cooking, Gaming
 
-. Technology  ---------------------------------------
+@ Technology  ----------------------------------------------
 . Frameworks: NextJS, Django
 . Languages: {{ LANGUAGES }}
-. Learning: C#, Springboot, ThreeJS, Shaders
+. Learning: CSharp, Springboot, ThreeJS, Shaders
 
-. GitHub Stats  -------------------------------------
+@ GitHub Stats  --------------------------------------------
 . Age: {{ AGE }}
 . Repos: {{ REPOS }}
 . Commits: {{ COMMITS }}
 . Stars: {{ STARS }}
-. Lines of Code: {{ LINES_OF_CODE }} ( {{ ADDED_CODES }} {{ REMOVED_CODES }} )
+. Lines of Code: {{ LINES_OF_CODE }} ( {{ ADDED_CODES }}, {{ REMOVED_CODES }} )
 ```
 
 ###
