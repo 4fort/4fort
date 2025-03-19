@@ -85,25 +85,45 @@ async function fetchRepoCount() {
 
 // Fetch Code Stats (Lines Added/Removed)
 async function fetchCodeStats() {
-  const query = `
-    {
-      user(login: "${username}") {
-        contributionsCollection {
-          totalCommitContributions
-          restrictedContributionsCount
+  const repos = await graphqlWithAuth(`
+      {
+        user(login: "${username}") {
+          repositories(first: 100, isFork: false) {
+            nodes { name }
+          }
         }
       }
-    }
-  `;
-  const response = await graphqlWithAuth(query);
+    `);
 
-  const added = Math.floor(Math.random() * 100000); // Randomized for mock data
-  const removed = Math.floor(Math.random() * 50000); // Randomized for mock data
-  const total = added - removed;
+  let totalAdded = 0;
+  let totalRemoved = 0;
+
+  // Loop through each repo to gather code stats
+  for (const repo of repos.user.repositories.nodes) {
+    const response = await fetch(
+      `https://api.github.com/repos/${username}/${repo.name}/stats/code_frequency`,
+      {
+        headers: {
+          Authorization: `token ${token}`,
+        },
+      }
+    );
+
+    const data = await response.json();
+
+    if (Array.isArray(data)) {
+      data.forEach(([_, additions, deletions]) => {
+        totalAdded += additions;
+        totalRemoved += Math.abs(deletions); // Deletions are negative values
+      });
+    }
+  }
+
+  const total = totalAdded - totalRemoved;
 
   return {
-    added: added.toLocaleString(),
-    removed: removed.toLocaleString(),
+    added: totalAdded.toLocaleString(),
+    removed: totalRemoved.toLocaleString(),
     total: total.toLocaleString(),
   };
 }
