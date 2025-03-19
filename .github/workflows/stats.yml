@@ -20,7 +20,7 @@ jobs:
       - name: Generate README.md
         uses: teoxoy/profile-readme-stats@v3
         with:
-          token: ${{ secrets.USER_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           includeForks: false # Set to true if you want to include forked repositories
 
       - name: Commit and Push Changes
