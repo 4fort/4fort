@@ -144,7 +144,7 @@ async function fetchTopLanguages() {
   const topLanguages = [...languageMap.entries()]
     .sort((a, b) => b[1] - a[1])
     .slice(0, 10)
-    .map(([name], index) => (index === 4 ? `\n           ${name}` : name))
+    .map(([name], index) => (index === 4 ? `\n              ${name}` : name))
     .join(", ");
 
   return topLanguages;

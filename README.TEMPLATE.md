@@ -18,12 +18,12 @@
 . Location: Philippines
 . Hobbies: Cooking, Gaming
 
-@ Technology  ----------------------------------------------
+@ Technology ----------------------------------------------
 . Frameworks: NextJS, Django
 . Languages: {{ LANGUAGES }}
 . Learning: CSharp, Springboot, ThreeJS, Shaders
 
-@ GitHub Stats  --------------------------------------------
+@ GitHub Stats --------------------------------------------
 . Age: {{ AGE }}
 . Repos: {{ REPOS }}
 . Commits: {{ COMMITS }}
