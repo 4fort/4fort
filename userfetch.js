@@ -53,23 +53,23 @@ async function fetchCommitCount() {
 
 async function fetchTopLanguages() {
   const query = `
-    {
-      user(login: "${username}") {
-        repositories(first: 100, isFork: false) {
-          nodes {
-            languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
-              edges {
-                size
-                node {
-                  name
+      {
+        user(login: "${username}") {
+          repositories(first: 100, isFork: false) {
+            nodes {
+              languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
+                edges {
+                  size
+                  node {
+                    name
+                  }
                 }
               }
             }
           }
         }
       }
-    }
-  `;
+    `;
 
   const response = await graphqlWithAuth(query);
   const repos = response.user.repositories.nodes;
@@ -93,7 +93,12 @@ async function fetchTopLanguages() {
     .slice(0, 10)
     .map(([name]) => name);
 
-  return topLanguages.join(", ");
+  // Format the languages list with a new line after 4 entries
+  const formattedLanguages = topLanguages
+    .map((lang, index) => (index === 4 ? `\n           ${lang}` : lang))
+    .join(", ");
+
+  return formattedLanguages;
 }
 
 async function updateReadme() {
