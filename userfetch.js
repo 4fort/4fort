@@ -1,9 +1,13 @@
 import fs from "fs/promises";
 import fetch from "node-fetch";
+import { Octokit } from "@octokit/core";
 import { graphql } from "@octokit/graphql";
 
 const token = process.env.GITHUB_TOKEN;
 const username = "4fort"; // Replace with your GitHub username
+const octokit = new Octokit({
+  auth: process.env.PAT, // Ensure your PAT includes `repo` scope
+});
 
 const graphqlWithAuth = graphql.defaults({
   headers: {
