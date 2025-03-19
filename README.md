@@ -14,10 +14,12 @@ Shell: zsh 5.9
 Pronouns: He/Him
 Location: Philippines
 Frameworks: NextJS, Django
-Languages: {{ LANGUAGES }}
+Languages: JavaScript, TypeScript,
+           Go, Python, PHP, Java,
+           C++, MySQL, PostgreSQL
 Learning: C#, Springboot, ThreeJS, Shaders
 Hobbies: Cooking, Gaming
-Commits: 933
+Commits: 935
 Stars: 1
 Discord: _4fort
 ```
