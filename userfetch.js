@@ -69,16 +69,17 @@ async function fetchAccountAge() {
 // Fetch Repositories Count
 async function fetchRepoCount() {
   const query = `
-    {
-      user(login: "${username}") {
-        repositories {
-          totalCount
+      query {
+        viewer {
+          repositories(ownerAffiliations: OWNER, isFork: false) {
+            totalCount
+          }
         }
       }
-    }
-  `;
-  const response = await graphqlWithAuth(query);
-  return response.user.repositories.totalCount;
+    `;
+
+  const response = await octokit.graphql(query);
+  return response.viewer.repositories.totalCount;
 }
 
 // Fetch Code Stats (Lines Added/Removed)
@@ -144,7 +145,7 @@ async function fetchTopLanguages() {
   const topLanguages = [...languageMap.entries()]
     .sort((a, b) => b[1] - a[1])
     .slice(0, 10)
-    .map(([name], index) => (index === 4 ? `\n              ${name}` : name))
+    .map(([name], index) => (index === 4 ? `\n             ${name}` : name))
     .join(", ");
 
   return topLanguages;
