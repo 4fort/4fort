@@ -84,46 +84,46 @@ async function fetchRepoCount() {
 }
 
 // Fetch Code Stats (Lines Added/Removed)
-async function fetchCodeStats() {
-  const repos = await graphqlWithAuth(`
-      {
-        user(login: "${username}") {
-          repositories(first: 100, isFork: false, privacy: PUBLIC) {
-            nodes { name }
-          }
-        }
-      }
-    `);
+// async function fetchCodeStats() {
+//   const repos = await graphqlWithAuth(`
+//       {
+//         user(login: "${username}") {
+//           repositories(first: 100, isFork: false, privacy: PUBLIC) {
+//             nodes { name }
+//           }
+//         }
+//       }
+//     `);
 
-  let totalAdded = 0;
-  let totalRemoved = 0;
+//   let totalAdded = 0;
+//   let totalRemoved = 0;
 
-  for (const repo of repos.user.repositories.nodes) {
-    const response = await fetch(
-      `https://api.github.com/repos/${username}/${repo.name}/stats/code_frequency`,
-      {
-        headers: { Authorization: `token ${token}` },
-      }
-    );
+//   for (const repo of repos.user.repositories.nodes) {
+//     const response = await fetch(
+//       `https://api.github.com/repos/${username}/${repo.name}/stats/code_frequency`,
+//       {
+//         headers: { Authorization: `token ${token}` },
+//       }
+//     );
 
-    const data = await response.json();
+//     const data = await response.json();
 
-    if (Array.isArray(data)) {
-      data.forEach(([_, additions, deletions]) => {
-        totalAdded += additions;
-        totalRemoved += Math.abs(deletions); // Ensure deletions are positive
-      });
-    }
-  }
+//     if (Array.isArray(data)) {
+//       data.forEach(([_, additions, deletions]) => {
+//         totalAdded += additions;
+//         totalRemoved += Math.abs(deletions); // Ensure deletions are positive
+//       });
+//     }
+//   }
 
-  const total = totalAdded - totalRemoved;
+//   const total = totalAdded - totalRemoved;
 
-  return {
-    added: totalAdded.toLocaleString(),
-    removed: totalRemoved.toLocaleString(),
-    total: total.toLocaleString(),
-  };
-}
+//   return {
+//     added: totalAdded.toLocaleString(),
+//     removed: totalRemoved.toLocaleString(),
+//     total: total.toLocaleString(),
+//   };
+// }
 
 // Fetch Top 10 Languages
 async function fetchTopLanguages() {
@@ -171,12 +171,19 @@ async function fetchTopLanguages() {
 
 // Update README
 async function updateReadme() {
-  const [stars, commits, age, repos, codeStats, languages] = await Promise.all([
+  const [
+    stars,
+    commits,
+    age,
+    repos,
+    // codeStats,
+    languages,
+  ] = await Promise.all([
     fetchStarCount(),
     fetchCommitCount(),
     fetchAccountAge(),
     fetchRepoCount(),
-    fetchCodeStats(),
+    // fetchCodeStats(),
     fetchTopLanguages(),
   ]);
 
@@ -188,9 +195,9 @@ async function updateReadme() {
     .replace("{{ COMMITS }}", commits)
     .replace("{{ AGE }}", age)
     .replace("{{ REPOS }}", repos)
-    .replace("{{ LINES_OF_CODE }}", codeStats.total)
-    .replace("{{ ADDED_CODES }}", `+${codeStats.added}`)
-    .replace("{{ REMOVED_CODES }}", `-${codeStats.removed}`)
+    // .replace("{{ LINES_OF_CODE }}", codeStats.total)
+    // .replace("{{ ADDED_CODES }}", `+${codeStats.added}`)
+    // .replace("{{ REMOVED_CODES }}", `-${codeStats.removed}`)
     .replace("{{ LANGUAGES }}", languages);
 
   await fs.writeFile("README.md", readmeContent);

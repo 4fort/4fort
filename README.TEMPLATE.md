@@ -28,7 +28,6 @@
 . Repos: {{ REPOS }}
 . Commits: {{ COMMITS }}
 . Stars: {{ STARS }}
-. Lines of Code: {{ LINES_OF_CODE }} ( {{ ADDED_CODES }}, {{ REMOVED_CODES }} )
 ```
 
 ###
