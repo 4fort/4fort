@@ -27,9 +27,8 @@
 @ GitHub Stats --------------------------------------------
 . Age: 5 years
 . Repos: 35
-. Commits: 982
-. Stars: 7
-. Lines of Code: 0 ( +0, -0 )
+. Commits: 985
+. Stars: 9
 ```
 
 ###
