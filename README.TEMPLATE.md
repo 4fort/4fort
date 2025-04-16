@@ -1,9 +1,5 @@
 ![Header](./header.png)
 
-```ruby
-● ● ●                                                Terminal
-```
-
 ```zsh
 > userfetch
 ```
@@ -83,7 +79,7 @@
 
 ###
 
-<h2>...And yes, I love listening to music 🎧</h2>
+<h2>...And yes, I love listening to music too🎧</h2>
 
 <div align="center">
   <a href="https://open.spotify.com/user/225vnemkl3rnfbf2ezg4jflpy">
