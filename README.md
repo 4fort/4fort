@@ -1,9 +1,5 @@
 ![Header](./header.png)
 
-```ruby
-● ● ●                                                Terminal
-```
-
 ```zsh
 > userfetch
 ```
@@ -27,7 +23,7 @@
 @ GitHub Stats --------------------------------------------
 . Age: 5 years
 . Repos: 37
-. Commits: 1027
+. Commits: 1028
 . Stars: 20
 ```
 
@@ -84,7 +80,7 @@
 
 ###
 
-<h2>...And yes, I love listening to music 🎧</h2>
+<h2>...And yes, I love listening to music too🎧</h2>
 
 <div align="center">
   <a href="https://open.spotify.com/user/225vnemkl3rnfbf2ezg4jflpy">
