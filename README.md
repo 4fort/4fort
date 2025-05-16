@@ -24,7 +24,7 @@
 . Age: 5 years
 . Repos: 37
 . Commits: 1089
-. Stars: 29
+. Stars: 30
 ```
 
 ###
