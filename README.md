@@ -16,14 +16,14 @@
 
 @ Technology ----------------------------------------------
 . Frameworks: NextJS, Django
-. Languages: TypeScript, CSS, JavaScript, SCSS, 
-             PHP, HTML, Java, Blade, C++, Go
+. Languages: TypeScript, PHP, Vue, CSS, 
+             JavaScript, SCSS, HTML, Java, Blade, C++
 . Learning: CSharp, Springboot, ThreeJS, Shaders
 
 @ GitHub Stats --------------------------------------------
 . Age: 5 years
-. Repos: 38
-. Commits: 1109
+. Repos: 41
+. Commits: 1117
 . Stars: 33
 ```
 
