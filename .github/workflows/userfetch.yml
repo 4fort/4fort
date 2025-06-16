@@ -32,10 +32,12 @@ jobs:
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
-          if ! git diff --quiet; then
+          # Check if README.md has been modified
+          if git diff --quiet HEAD -- README.md; then
+            echo "No changes to README.md, skipping commit"
+          else
+            echo "Changes detected in README.md, committing..."
             git add README.md
             git commit -m 'Update README with latest stats'
             git push
-          else
-            echo "No changes to commit"
           fi
