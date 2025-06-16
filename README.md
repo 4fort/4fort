@@ -8,23 +8,23 @@
 
 ```makefile
 @ 4fort@github ---------------------------------------------
-.  OS: EndeavourOS (arch based btw)
-.  Shell: zsh 5.9
-.  Pronouns: He/Him
-.  Location: Philippines
-.  Hobbies: Cooking, Gaming
+. OS: EndeavourOS (arch based btw)
+. Shell: zsh 5.9
+. Pronouns: He/Him
+. Location: Philippines
+. Hobbies: Cooking, Gaming
 
 @ Technology ----------------------------------------------
-. 󰚔 Frameworks: NextJS, Django
-. 󰘦 Languages: TypeScript, PHP, Vue, CSS, 
+. Frameworks: NextJS, Django
+. Languages: TypeScript, PHP, Vue, CSS, 
              JavaScript, SCSS, HTML, Java, Blade, C++
-.  Learning: VueJS, Springboot, ThreeJS, Shaders
+. Learning: VueJS, Springboot, ThreeJS, Shaders
 
 @ GitHub Stats --------------------------------------------
-. 󰅐 Age: 5 years
-.  Repos: 41
-.  Commits: 1168
-.  Stars: 33
+. Age: 5 years
+. Repos: 41
+. Commits: 1169
+. Stars: 33
 ```
 
 ###
