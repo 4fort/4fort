@@ -17,7 +17,7 @@
 @ Technology ----------------------------------------------
 . Frameworks: NextJS, Django
 . Languages: {{ LANGUAGES }}
-. Learning: VueJS, Springboot, ThreeJS, Shaders
+. Learning: Vue, Springboot, ThreeJS, Shaders
 
 @ GitHub Stats --------------------------------------------
 . Age: {{ AGE }}
