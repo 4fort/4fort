@@ -169,6 +169,11 @@ async function fetchTopLanguages() {
   return topLanguages;
 }
 
+// Generate random Pokemon number between 1 and 649
+function generateRandomPokemonNumber() {
+  return Math.floor(Math.random() * 649) + 1;
+}
+
 // Update README
 async function updateReadme() {
   const [
@@ -187,10 +192,13 @@ async function updateReadme() {
     fetchTopLanguages(),
   ]);
 
+  const pokemonNumber = generateRandomPokemonNumber();
+
   let templateContent = await fs.readFile("README.TEMPLATE.md", "utf8");
 
   // Replace placeholders with actual values
   let readmeContent = templateContent
+    .replace("{{ POKEMON_NUMBER }}", pokemonNumber)
     .replace("{{ STARS }}", stars)
     .replace("{{ COMMITS }}", commits)
     .replace("{{ AGE }}", age)
