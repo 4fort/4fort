@@ -4,27 +4,27 @@
 > userfetch
 ```
 
-<img align="left" src="https://i.redd.it/h7dae4o0uk461.jpg" alt="Bakaguya made by レヴィノス (https://www.pixiv.net/en/artworks/80962527)" width="320" />
+<img align="left" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/132.gif" alt="pokemon sprites :P" width="320" />
 
 ```makefile
 @ 4fort@github ---------------------------------------------
-. OS: Fedora Linux WS
-. Shell: zsh 5.9
-. Pronouns: He/Him
-. Location: Philippines
-. Hobbies: Cooking, Gaming
+.  OS: EndeavourOS (arch based btw)
+.  Shell: zsh 5.9
+.  Pronouns: He/Him
+.  Location: Philippines
+.  Hobbies: Cooking, Gaming
 
 @ Technology ----------------------------------------------
-. Frameworks: NextJS, Django
-. Languages: TypeScript, PHP, Vue, CSS, 
+. 󰚔 Frameworks: NextJS, Django
+. 󰘦 Languages: TypeScript, PHP, Vue, CSS, 
              JavaScript, SCSS, HTML, Java, Blade, C++
-. Learning: CSharp, Springboot, ThreeJS, Shaders
+.  Learning: VueJS, Springboot, ThreeJS, Shaders
 
 @ GitHub Stats --------------------------------------------
-. Age: 5 years
-. Repos: 41
-. Commits: 1156
-. Stars: 33
+. 󰅐 Age: 5 years
+.  Repos: 41
+.  Commits: 1168
+.  Stars: 33
 ```
 
 ###
@@ -80,7 +80,7 @@
 
 ###
 
-<h2>...And yes, I love listening to music too🎧</h2>
+<h2>...And yes, I love listening to music too 🎧</h2>
 
 <div align="center">
   <a href="https://open.spotify.com/user/225vnemkl3rnfbf2ezg4jflpy">
