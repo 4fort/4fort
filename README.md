@@ -4,7 +4,7 @@
 > userfetch
 ```
 
-<img align="left" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/367.gif" alt="pokemon sprites :P" width="320" />
+<img align="left" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/277.gif" alt="pokemon sprites :P" width="320" />
 
 ```makefile
 @ 4fort@github ---------------------------------------------
@@ -16,14 +16,14 @@
 
 @ Technology ----------------------------------------------
 . Frameworks: NextJS, Django
-. Languages: TypeScript, PHP, Vue, CSS, 
-             JavaScript, SCSS, HTML, Java, Blade, C++
+. Languages: TypeScript, CSS, PHP, Vue, 
+             JavaScript, SCSS, Shell, HTML, Java, Blade
 . Learning: Vue, Springboot, ThreeJS, Shaders
 
 @ GitHub Stats --------------------------------------------
 . Age: 5 years
-. Repos: 41
-. Commits: 1213
+. Repos: 42
+. Commits: 1215
 . Stars: 34
 ```
 
