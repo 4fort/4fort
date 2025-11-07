@@ -4,7 +4,7 @@
 > userfetch
 ```
 
-<img align="left" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/92.gif" alt="pokemon sprites :P" width="320" />
+<img align="left" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/418.gif" alt="pokemon sprites :P" width="320" />
 
 ```makefile
 @ 4fort@github ---------------------------------------------
@@ -24,7 +24,7 @@
 . Age: 5 years
 . Repos: 40
 . Commits: 1047
-. Stars: 60
+. Stars: 61
 ```
 
 ###
