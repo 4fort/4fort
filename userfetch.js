@@ -174,6 +174,30 @@ function generateRandomPokemonNumber() {
   return Math.floor(Math.random() * 649) + 1;
 }
 
+// Generate sharp pixel-art SVG for animated Pokemon sprite
+async function generatePokemonSvg(pokemonNumber) {
+  const url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemonNumber}.gif`;
+  const response = await fetch(url);
+  const arrayBuffer = await response.arrayBuffer();
+  const buffer = Buffer.from(arrayBuffer);
+  const width = buffer.readUInt16LE(6);
+  const height = buffer.readUInt16LE(8);
+  const base64 = buffer.toString("base64");
+
+  const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="100%" height="100%">
+  <style>
+    image {
+      image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: crisp-edges;
+    }
+  </style>
+  <image href="data:image/gif;base64,${base64}" width="${width}" height="${height}" />
+</svg>`;
+
+  await fs.writeFile("pokemon.svg", svgContent, "utf8");
+}
+
 // Update README
 async function updateReadme() {
   const [
@@ -193,6 +217,7 @@ async function updateReadme() {
   ]);
 
   const pokemonNumber = generateRandomPokemonNumber();
+  await generatePokemonSvg(pokemonNumber);
 
   let templateContent = await fs.readFile("README.TEMPLATE.md", "utf8");
 

@@ -6,7 +6,7 @@
 > userfetch
 ```
 
-<img align="left" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/603.gif" alt="pokemon sprite" width="280" />
+<img align="left" src="./pokemon.svg" alt="pokemon sprite" width="280" />
 
 ```makefile
 @ 4fort@github ---------------------------------------------
