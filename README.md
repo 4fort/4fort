@@ -1,10 +1,12 @@
-![Header](./header.png)
+<p align="center">
+  <img src="./header.png" alt="Header" width="100%" />
+</p>
 
 ```zsh
 > userfetch
 ```
 
-<img align="left" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/121.gif" alt="pokemon sprites :P" width="320" />
+<img align="left" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/121.gif" alt="pokemon sprite" width="280" />
 
 ```makefile
 @ 4fort@github ---------------------------------------------
@@ -20,7 +22,7 @@
 
 @ Technology ----------------------------------------------
 . Frameworks: NextJS, Django, Vue, Spring
-. Languages: TypeScript, CSS, PHP, JavaScript, 
+. Languages: TypeScript, CSS, PHP, JavaScript,
              SCSS, Shell, HTML, Java, Blade, C++
 . Learning: ThreeJS, Shaders
 
@@ -31,71 +33,37 @@
 . Stars: 62
 ```
 
-###
+<br clear="both" />
 
-<h2>Stats 🔥</h3>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=4fort&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=true" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=4fort&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=github_dark&hide_border=true" height="150" alt="languages graph"  />
-</div>
-
-###
-
-<h2>Tech Stack 👨‍💻</h2>
-
-<div align="left">
-  <img src="https://skillicons.dev/icons?i=nextjs" height="30" alt="nextjs logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=react" height="30" alt="react logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=vue" height="30" alt="vue logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=ts" height="30" alt="typescript logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=supabase" height="30" alt="supabase logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=postgres" height="30" alt="postgresql logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=mysql" height="30" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=express" height="30" alt="express logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=nodejs" height="30" alt="nodejs logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=arduino" height="30" alt="arduino logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=django" height="30" alt="django logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=spring" height="30" alt="spring logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=git" height="30" alt="git logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=figma" height="30" alt="figma logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=php" height="30" alt="php logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=go" height="30" alt="go logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=java" height="30" alt="java logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=cpp" height="30" alt="cplusplus logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" height="30" alt="facebook logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=apple" height="30" alt="apple logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=neovim" height="30" alt="neovim logo"  />
-</div>
-
-###
-
-<h2>...And yes, I love listening to music too 🎧</h2>
+<h2 align="center">Stats 🔥</h2>
 
 <div align="center">
-  <a href="https://open.spotify.com/user/225vnemkl3rnfbf2ezg4jflpy">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=225vnemkl3rnfbf2ezg4jflpy&count=5" alt="Spotify recently played"  />
+  <img src="https://github-readme-stats.vercel.app/api?username=4fort&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=true" height="150" alt="stats graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=4fort&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=github_dark&hide_border=true" height="150" alt="languages graph" />
+</div>
+
+<br />
+
+<h2 align="center">Tech Stack 👨‍💻</h2>
+
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nextjs,react,vue,ts,nodejs,express,django,spring,postgres,mysql,supabase,java,cpp,go,php,git,neovim,figma,apple,arduino&perline=10" alt="Tech Stack" />
   </a>
 </div>
 
-###
+<br />
+
+<h2 align="center">...And yes, I love listening to music too 🎧</h2>
+
+<p align="center">
+  <a href="https://open.spotify.com/user/225vnemkl3rnfbf2ezg4jflpy" target="_blank" rel="noopener noreferrer">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=225vnemkl3rnfbf2ezg4jflpy&amp;theme=dark&amp;width=896&amp;radius=15" />
+      <source media="(prefers-color-scheme: light)" srcset="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=225vnemkl3rnfbf2ezg4jflpy&amp;theme=light&amp;width=896&amp;radius=15" />
+      <img src="https://spotify-recently-played.jeffreyca.workers.dev/svg?user=225vnemkl3rnfbf2ezg4jflpy&amp;theme=dark&amp;width=896&amp;radius=15" alt="Spotify recently played" width="100%" />
+    </picture>
+  </a>
+</p>
+
+<br />
