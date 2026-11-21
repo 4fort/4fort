@@ -8,17 +8,21 @@
 
 ```makefile
 @ 4fort@github ---------------------------------------------
-. OS: EndeavourOS (arch based btw)
+. OS: macOS
+. Host: MacBook Air (M4)
+. WM: OmniWM
+. Terminal: iTerm2
+. Editor: Neovim
 . Shell: zsh 5.9
 . Pronouns: He/Him
 . Location: Philippines
 . Hobbies: Cooking, Gaming
 
 @ Technology ----------------------------------------------
-. Frameworks: NextJS, Django
+. Frameworks: NextJS, Django, Vue, Spring
 . Languages: TypeScript, CSS, PHP, JavaScript, 
              SCSS, Shell, HTML, Java, Blade, C++
-. Learning: Vue, Springboot, ThreeJS, Shaders
+. Learning: ThreeJS, Shaders
 
 @ GitHub Stats --------------------------------------------
 . Age: 6 years
@@ -45,6 +49,8 @@
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=react" height="30" alt="react logo"  />
   <img width="12" />
+  <img src="https://skillicons.dev/icons?i=vue" height="30" alt="vue logo"  />
+  <img width="12" />
   <img src="https://skillicons.dev/icons?i=ts" height="30" alt="typescript logo"  />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=supabase" height="30" alt="supabase logo"  />
@@ -61,6 +67,8 @@
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=django" height="30" alt="django logo"  />
   <img width="12" />
+  <img src="https://skillicons.dev/icons?i=spring" height="30" alt="spring logo"  />
+  <img width="12" />
   <img src="https://skillicons.dev/icons?i=git" height="30" alt="git logo"  />
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=figma" height="30" alt="figma logo"  />
@@ -75,7 +83,9 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" height="30" alt="facebook logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg" height="30" alt="fedora logo"  />
+  <img src="https://skillicons.dev/icons?i=apple" height="30" alt="apple logo"  />
+  <img width="12" />
+  <img src="https://skillicons.dev/icons?i=neovim" height="30" alt="neovim logo"  />
 </div>
 
 ###
